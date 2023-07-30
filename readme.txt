@@ -1,3 +1,7 @@
 第一天进度：
-第二天知识点：
-(1)分页接口的设计：
+分页查询：Mybatis插件的功能：pageHelper的MAVEN的依赖如下：
+<dependency>
+                <groupId>com.github.pagehelper</groupId>
+                <artifactId>pagehelper-spring-boot-starter</artifactId>
+                <version>${pagehelper}</version>
+</dependency>
