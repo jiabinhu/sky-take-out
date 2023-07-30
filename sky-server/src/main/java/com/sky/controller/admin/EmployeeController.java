@@ -93,6 +93,20 @@ public class EmployeeController {
         return Result.success(pageResult);
     }
 
+    /**
+     * 使用或者禁用用户
+     * @param status
+     * @param id
+     * @return
+     */
+    @PostMapping("/status/{status}")
+    @ApiOperation("使用或者禁用用户")
+    public Result StartOrStop(@PathVariable Integer status,long id){
+        log.info("使用或者禁用用户{},{}...",status,id);
+        employeeService.StartOrStop(status,id);
+        return Result.success();
+    }
+
 
 
 }
